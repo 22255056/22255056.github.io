@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style >
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      font-family:'돋움';
+      font-size: 14px;
+      color: #444444;
+    }
+    li{
+      list-style-type:none;
+    }
+
+  .clear{
+    clear:both;
+  }
+
+  header{
+    width:1140px;
+    height: 100px;
+    margin: 0 auto;
+/*    border: solid 1px red;  */
+  }
+
+  #logo{
+    float:left;
+    margin: 20px 0 0 20px;
+/*    border: solid 1px red;  */
+  }
+
+
+  #menus{
+    float: right;
+/*    border: solid 1px red;  */
+  }
+
+  #top_menu{
+    text-align: right;
+    margin-top: 20px;
+/*    border: solid 1px red;  */
+  }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+  #main_menu{
+   margin-top: 20px;
+   font-family: '맑은고딕';
+   font-size: 20px;
+   color:black;
+/*   border:solid 1px red; */
+  }
+
+  #main_menu li{
+   display: inline;
+   margin-left: 80px;
+  }
+
+  #main_img{
+    width: 100%;
+    height:50px;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 20px;
+  }
+
+  #contents{
+    width:1140px;
+    margin: 0 auto;
+  }
+
+  #sub_menu{
+    width:234px;
+    float:left;
+    margin-top: 25px;
+/*    border:solid 1px red;  */
+  }
+
+  #sub_menu h3{
+    font-size: 18px;
+    color: white;
+    padding:12px;
+    background-color: black;
+  }
+
+  #sub_menu li{
+    padding: 10px;
+    border-bottom: dotted 1px #cccccc;
+  }
+
+
+  #main_contents{
+    width: 880px;
+    float: right;
+    margin-top: 25px;
+
+  }
+  #main_contents h3{
+    font-size: 22px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #cccccc;
+  }
+  #main_contents p{
+    margin-top: 30px;
+    line-height: 180%;
+  }
+
+  main_contents li{
+    padding: 5px;
+  }
+
+  footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    background-color: #EAEAEA;
+  }
+  #footer_box{
+    width: 1140px;
+    height: 150px;
+    margin: 0 auto;
+
+  }
+  #footer_logo{
+    float:left;
+    margin: 50px 0 0 30px;
+
+  }
+  #address{
+    float: right;
+    margin: 50px 30px 0 0;
+    color: #8C8C8C;
+
+  }
+
+.section{
+  float: left;
+}
+  .section input[id*='slide']{
+    display:none;
+  }
+  .section .slidewrap{
+    max-width:450px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .section .slidelist{
+    white-space:nowrap;
+    font-size:0;
+  }
+  .section .slidelist > li{
+    display:inline-block;
+    vertical-align:left;
+    width:100%;
+    transition:all .5s;
+  }
+   .section .slidelist > li > a{
+     display: block;
+     position:relative;
+   }
+    . section .slidelist > li > a img{
+      width: 100%;
+    }
+    .section .slidelist label {
+      position: absolute;
+      z-index:10;
+      top:50%;
+      transform:translateY(-50%);
+      padding:50px;
+      cursor:pointer;
+    }
+    .section .slidelist .left{
+      left:0px;
+      background:url('img/left.png') center center / 20% no-repeat;
+    }
+    .section .slidelist .right{
+      right:60px;
+      background:url('img/right.png') center center / 20% no-repeat;
+    }
+
+    .section [id='slide01']:checked ~ .slidewrap .slidelist >
+    li{transform:translateX(0%);}
+    .section [id='slide02']:checked ~ .slidewrap .slidelist >
+    li{transform:translateX(-100%);}
+    .section [id='slide03']:checked ~ .slidewrap .slidelist >
+    li{transform:translateX(-200%);}
+
+#section2{
+  float:right;
+  width:300px;
+}
+
+
+
+
+  </style>
+  <body>
+    <header>
+
+      <div id="logo">
+      <a href="main.html"> <img src='img/logo.png'width=300></a>
+      </div>
+
+      <nav id ='menus'>
+        <div id="top_menu">
+
+
+          youtube | instagram | webste
+        </div>
+        <ul id='main_menu'>
+          <li><a href='aa.html'>MiDi 지원계기</a></li>
+          <li><a href='a.html'>카드뉴스</a></li>
+          <li><a href='b.html'>이벤트</a></li>
+          <li><a href='c.html'>영상</a></li>
+          <li>학보</li>
+        </ul>
+      </nav>
+    </header>
+    <section id='main_img'>
+    </section>
+    <section id='contents'>
+      <nav id= 'sub_menu'>
+        <h3>영상</h3>
+        <ul>
+          <li>학과별 인터뷰</li>
+          <li>권창현 총장 취임 인터뷰</li>
+
+                  </ul>
+      </nav>
+
+      <div id="main_contents">
+        <div class="section">
+        <h3>학과별 인터뷰!</h3> <br><br>
+
+        <video width='600' controls>
+          <source src ='inter.mp4' type='inter/mp4'>
+            <source src ='inter.webm' type='inter/webm'>
+              <source src ='inter.ogg' type='inter/ogg'>
+
+        </video> <br> <br>
+          < 학과별 인터뷰 >는, 계원예대의 예비 신입생들과 재학생들을 위해 기획한 인터뷰입니다.  <br> <br>
+            같은 학교지만 다른 과가 어떤 것을 배우는지 궁금했던 저의 경험을 떠올려, 최대한 예능, 유튜브 클립처럼 재밌고 유익한 질문들로 채울 수 있도록
+            팀원들과 열심히 고민하고 다듬었던 기억이 납니다.  <br><br>
+            특히 연출팀이 온 몸과 마음을 갈아 촬영하고 편집했던 프로젝트인데, 공들인 보람이 있게 높은 조회수를 기록하며 저희 midi의 대표 제작 영상이 되었답니다!<br>
+
+
+      </div>
+      <audio src="img/seoul.mp3"> controls </audio>
+      <audio src="img/paperring.mp3"> controls </audio>
+      </div>
+
+
+        </section>
+<div class="clear"> </div>
+<!-- float 속성 해제 -->
+        <footer>
+        <div id="footer_box">
+          <div id="footer_logo">
+            <img src="img/logo.png"width=150>
+          </div>
+          <ul id='address'>
+            <li>경기도 의왕시 계원대학로 66(내손동)계원예술대학교 디자인관 4층 842번 사물함</li>
+            <li>우)16038 </li>
+            <li>대표전화 1899-5823 </li>
+            <li>COPYRIGHT (C) midi & 이서울 ALL RIGHTS RESERVED</li>
+          </ul>
+        </div>
+        </footer>
+
+
+  </body>
+
+</html>

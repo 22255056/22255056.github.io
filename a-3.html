@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style >
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      font-family:'돋움';
+      font-size: 14px;
+      color: #444444;
+    }
+    li{
+      list-style-type:none;
+    }
+
+  .clear{
+    clear:both;
+  }
+
+  header{
+    width:1140px;
+    height: 100px;
+    margin: 0 auto;
+/*    border: solid 1px red;  */
+  }
+
+  #logo{
+    float:left;
+    margin: 20px 0 0 20px;
+/*    border: solid 1px red;  */
+  }
+
+
+  #menus{
+    float: right;
+/*    border: solid 1px red;  */
+  }
+
+  #top_menu{
+    text-align: right;
+    margin-top: 20px;
+/*    border: solid 1px red;  */
+  }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+  #main_menu{
+   margin-top: 20px;
+   font-family: '맑은고딕';
+   font-size: 20px;
+   color:black;
+/*   border:solid 1px red; */
+  }
+
+  #main_menu li{
+   display: inline;
+   margin-left: 80px;
+  }
+
+  #main_img{
+    width: 100%;
+    height:50px;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 20px;
+  }
+
+  #contents{
+    width:1140px;
+    margin: 0 auto;
+  }
+
+  #sub_menu{
+    width:234px;
+    float:left;
+    margin-top: 25px;
+/*    border:solid 1px red;  */
+  }
+
+  #sub_menu h3{
+    font-size: 18px;
+    color: white;
+    padding:12px;
+    background-color: black;
+  }
+
+  #sub_menu li{
+    padding: 10px;
+    border-bottom: dotted 1px #cccccc;
+  }
+
+
+  #main_contents{
+    width: 880px;
+    float: right;
+    margin-top: 25px;
+
+  }
+  #main_contents h3{
+    font-size: 22px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #cccccc;
+  }
+  #main_contents p{
+    margin-top: 30px;
+    line-height: 180%;
+  }
+
+  main_contents li{
+    padding: 5px;
+  }
+
+  footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    background-color: #EAEAEA;
+  }
+  #footer_box{
+    width: 1140px;
+    height: 150px;
+    margin: 0 auto;
+
+  }
+  #footer_logo{
+    float:left;
+    margin: 50px 0 0 30px;
+
+  }
+  #address{
+    float: right;
+    margin: 50px 30px 0 0;
+    color: #8C8C8C;
+
+  }
+
+.section{
+  float: left;
+}
+  .section input[id*='slide']{
+    display:none;
+  }
+  .section .slidewrap{
+    max-width:450px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .section .slidelist{
+    white-space:nowrap;
+    font-size:0;
+  }
+  .section .slidelist > li{
+    display:inline-block;
+    vertical-align:left;
+    width:100%;
+    transition:all .5s;
+  }
+   .section .slidelist > li > a{
+     display: block;
+     position:relative;
+   }
+    . section .slidelist > li > a img{
+      width: 100%;
+    }
+    .section .slidelist label {
+      position: absolute;
+      z-index:10;
+      top:50%;
+      transform:translateY(-50%);
+      padding:50px;
+      cursor:pointer;
+    }
+    .section .slidelist .left{
+      left:0px;
+      background:url('img/left.png') center center / 20% no-repeat;
+    }
+    .section .slidelist .right{
+      right:60px;
+      background:url('img/right.png') center center / 20% no-repeat;
+    }
+
+    .section [id='slide01']:checked ~ .slidewrap .slidelist >
+    li{transform:translateX(0%);}
+    .section [id='slide02']:checked ~ .slidewrap .slidelist >
+    li{transform:translateX(-100%);}
+    .section [id='slide03']:checked ~ .slidewrap .slidelist >
+    li{transform:translateX(-200%);}
+
+#section2{
+  float:right;
+  width:300px;
+}
+
+
+
+
+  </style>
+  <body>
+    <header>
+
+      <div id="logo">
+      <a href="main.html"> <img src='img/logo.png'width=300></a>
+      </div>
+
+      <nav id ='menus'>
+        <div id="top_menu">
+
+
+          youtube | instagram | webste
+        </div>
+        <ul id='main_menu'>
+          <li><a href='aa.html'>MiDi 지원계기</a></li>
+          <li><a href='a.html'>카드뉴스</a></li>
+          <li><a href='b.html'>이벤트</a></li>
+          <li><a href='c.html'>영상</a></li>
+          <li>학보</li>
+        </ul>
+      </nav>
+    </header>
+    <section id='main_img'>
+    </section>
+    <section id='contents'>
+      <nav id= 'sub_menu'>
+        <h3>카드뉴스</h3>
+        <ul>
+          <li><a href='a.html'>계원예대 3월뉴스</a></li>
+          <li><a href='a-2.html'>계원예대 포토스팟 추천</a></li>
+          <li><a href='a-3.html'>플레이리스트 추천</a></li>
+          <li>여름방학 To Do List</li>
+
+                  </ul>
+      </nav>
+
+      <div id="main_contents">
+        <div class="section">
+        <h3>플레이리스트 추천</h3> <br><br>
+
+        <table>
+
+      <tr>
+       <td>
+          <input type='radio' name='slide' id='slide01'checked>
+          <input type='radio' name='slide' id='slide02'>
+          <input type='radio' name='slide' id='slide03'>
+          <div class="slidewrap">
+            <ul class='slidelist'>
+              <li>
+                <a>
+                  <label for="slide03" class='left'></label>
+                  <img src="card/3-1.jpg">
+                  <label for="slide02" class='right'></label>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <label for="slide01" class='left'></label>
+                  <img src="card/3-2.jpg">
+                  <label for="slide03" class='right'></label>
+                </a>
+              </li><li>
+                <a>
+                  <label for="slide02" class='left'></label>
+                  <img src="card/3-3.jpg">
+                  <label for="slide01" class='right'></label>
+                </a>
+              </li>
+            </ul>
+         </td>
+        <td>
+            <br><br>
+          < 여름을 기다리며~ MiDi가 추천하는 플레이리스트>는, 사실 카드뉴스 소재 정하는게 어려워 가볍게 읽을 수 있는 주제를 선택해
+          기획했던 카드뉴스입니다.  <br> <br>
+           이 카드뉴스에 담긴 에피소드에 대해 조금 얘기하자면, 노래를 들을 때 장르 편식이 심한 편이라 다양한 장르의 노래를 골라오는 게
+           정말 어려웠어요.  <br><br>
+           하지만 카드뉴스를 작성하면서 평소 듣지 않던 장르의 음악을 들을 수 있어 나름 제게 의미가 있는 기억이랍니다! <br>
+           일부러 제가 좋아하는 테일러 스위프트의 노래와, 제 이름이 들어간 노래를 선정한 건 비밀이에요!!ㅋㅋㅋ
+       </td>  </tr>
+      </table>
+      </div>
+      <audio src="img/seoul.mp3"> controls </audio>
+      <audio src="img/paperring.mp3"> controls </audio>
+      </div>
+
+
+        </section>
+<div class="clear"> </div>
+<!-- float 속성 해제 -->
+        <footer>
+        <div id="footer_box">
+          <div id="footer_logo">
+            <img src="img/logo.png"width=150>
+          </div>
+          <ul id='address'>
+            <li>경기도 의왕시 계원대학로 66(내손동)계원예술대학교 디자인관 4층 842번 사물함</li>
+            <li>우)16038 </li>
+            <li>대표전화 1899-5823 </li>
+            <li>COPYRIGHT (C) midi & 이서울 ALL RIGHTS RESERVED</li>
+          </ul>
+        </div>
+        </footer>
+
+
+  </body>
+
+</html>
